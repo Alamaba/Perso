@@ -206,9 +206,9 @@ Les contributions sont les bienvenues ! Pour contribuer :
 
 ## 📞 Support
 
-- 📧 Email : votre-email@exemple.com
-- 🐛 Issues : [GitHub Issues](https://github.com/votre-username/perso/issues)
-- 💬 Discussions : [GitHub Discussions](https://github.com/votre-username/perso/discussions)
+- 📧 Email : mohamedelaf8@gmail.com
+- 🐛 Issues : [GitHub Issues](https://github.com/alamaba/perso/issues)
+- 💬 Discussions : [GitHub Discussions](https://github.com/alamaba/perso/discussions)
 
 ## 📄 Licence
 
@@ -225,6 +225,5 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ---
 
 <div align="center">
-  <p>Fait avec ❤️ avec Flutter</p>
   <p>⭐ N'hésitez pas à donner une étoile si ce projet vous aide !</p>
 </div>
