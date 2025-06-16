@@ -1,3 +1,1 @@
-# Placeholder pour le logo Google
-# Dans une vraie application, vous devriez télécharger le logo officiel de Google
-# depuis https://developers.google.com/identity/branding-guidelines 
+
