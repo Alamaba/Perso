@@ -1,0 +1,36 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Dart
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+# Use the recommended Flutter setup action
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Analyze project source
+      - name: Analyze project source
+        run: dart analyze
+
+      # Run tests
+      - name: Run tests
+        run: dart test
