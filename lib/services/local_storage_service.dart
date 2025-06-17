@@ -5,16 +5,18 @@ import '../models/debt_credit_item.dart';
 class LocalStorageService extends GetxService {
   static const String _boxName = 'debt_credit_box';
   late Box<DebtCreditItem> _box;
+  DebtCreditItemAdapter debtCreditItemAdapter = DebtCreditItemAdapter();
+  HistoryEntryAdapter historyEntryAdapter = HistoryEntryAdapter();
 
   Future<LocalStorageService> init() async {
     await Hive.initFlutter();
 
     // Enregistrer les adaptateurs
     if (!Hive.isAdapterRegistered(0)) {
-      Hive.registerAdapter(DebtCreditItemAdapter());
+      Hive.registerAdapter(debtCreditItemAdapter);
     }
     if (!Hive.isAdapterRegistered(1)) {
-      Hive.registerAdapter(HistoryEntryAdapter());
+      Hive.registerAdapter(historyEntryAdapter);
     }
 
     _box = await Hive.openBox<DebtCreditItem>(_boxName);
